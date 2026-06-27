@@ -67,21 +67,17 @@ input[type="text"] {
     transform: translateY(-8px);
 }
 
-/* IMAGE */
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.gallery-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ffcc00;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-/* TEXT */
-.card h3 {
-    text-align: center;
-    margin: 10px 0 5px;
-}
-
-.card p {
-    text-align: center;
-    padding: 0 10px 15px;
-    font-size: 14px;
+.gallery-button:hover {
+  background-color: #ffaa00;
 }
