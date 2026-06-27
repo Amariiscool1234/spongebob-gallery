@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #cfefff, #8fd3ff);
+    background: #f5fbff;
     color: #222;
 }
 
@@ -16,12 +16,13 @@ nav {
     padding: 15px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
+    font-weight:bold;
     color: #222;
 }
 
@@ -59,7 +60,7 @@ input[type="text"] {
 /* CARD */
 .card {
     background: white;
-    border-radius: 15px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     transition: 0.3s ease;
