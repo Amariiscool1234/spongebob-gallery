@@ -5,8 +5,8 @@
 
 body {
     margin: 0;
-    font-family: "Arial", sans-serif;
-    background: linear-gradient(to bottom, #dff6ff, #b3ecff);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cfefff, #8fd3ff);
     color: #222;
 }
 
@@ -15,15 +15,14 @@ nav {
     background: #ffcc00;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
     color: #222;
-    transition: 0.2s;
 }
 
 nav a:hover {
@@ -33,27 +32,26 @@ nav a:hover {
 /* TITLE */
 h1 {
     text-align: center;
-    margin: 20px 0;
-    font-size: 32px;
+    margin-top: 20px;
+    font-size: 34px;
 }
 
 /* SEARCH BAR */
 input[type="text"] {
     display: block;
-    margin: 10px auto 25px;
+    margin: 20px auto;
     padding: 12px;
-    width: 320px;
-    border-radius: 25px;
+    width: 300px;
+    border-radius: 20px;
     border: 1px solid #ccc;
-    outline: none;
 }
 
 /* GRID */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 25px;
-    padding: 25px;
+    padding: 30px;
     max-width: 1100px;
     margin: auto;
 }
@@ -61,65 +59,31 @@ input[type="text"] {
 /* CARD */
 .card {
     background: white;
-    border-radius: 16px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
 /* IMAGE */
 .card img {
     width: 100%;
-    height: 190px;
+    height: 180px;
     object-fit: cover;
 }
 
 /* TEXT */
 .card h3 {
-    margin: 10px 0 5px;
     text-align: center;
+    margin: 10px 0 5px;
 }
 
 .card p {
-    padding: 0 12px 15px;
-    font-size: 14px;
     text-align: center;
-}
-
-/* FORM PAGE */
-form {
-    background: white;
-    max-width: 420px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-input, textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background: #ffcc00;
-    border: none;
-    padding: 12px;
-    width: 100%;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-button:hover {
-    background: #e6b800;
+    padding: 0 10px 15px;
+    font-size: 14px;
 }
