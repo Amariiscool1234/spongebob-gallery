@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #eef7ff;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to bottom, #dff6ff, #b3ecff);
     color: #222;
 }
 
@@ -10,9 +10,7 @@ nav {
     background: #ffcc00;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    position: sticky;
-    top: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 nav a {
@@ -20,6 +18,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     color: #222;
+    transition: 0.2s;
 }
 
 nav a:hover {
@@ -29,26 +28,27 @@ nav a:hover {
 /* TITLE */
 h1 {
     text-align: center;
-    margin: 25px 0 10px;
-    font-size: 28px;
+    margin: 20px 0;
+    font-size: 32px;
 }
 
 /* SEARCH BAR */
 input[type="text"] {
     display: block;
-    margin: 10px auto 20px;
-    padding: 10px;
-    width: 300px;
-    border-radius: 10px;
+    margin: 10px auto 25px;
+    padding: 12px;
+    width: 320px;
+    border-radius: 25px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
 /* GRID */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 25px;
-    padding: 20px;
+    padding: 25px;
     max-width: 1100px;
     margin: auto;
 }
@@ -56,15 +56,15 @@ input[type="text"] {
 /* CARD */
 .card {
     background: white;
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
 /* IMAGE */
@@ -86,32 +86,33 @@ input[type="text"] {
     text-align: center;
 }
 
-/* FORM */
+/* FORM PAGE */
 form {
     background: white;
     max-width: 420px;
     margin: 30px auto;
     padding: 20px;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 input, textarea {
     width: 100%;
-    margin: 8px 0;
+    margin: 10px 0;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #ccc;
 }
 
 button {
     background: #ffcc00;
     border: none;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 button:hover {
